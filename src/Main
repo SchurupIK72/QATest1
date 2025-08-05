@@ -1,0 +1,29 @@
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+public class Main {
+
+    static final String BASE_URL = "https://petstore.swagger.io/v2";
+
+    public static void main(String[] args) {
+        HttpClient client = HttpClient.newHttpClient();
+
+        // ===== Пример: GET /pet/{petId} =====
+        long petId = 1;
+        HttpRequest getPetRequest = HttpRequest.newBuilder()
+                .uri(URI.create(BASE_URL + "/pet/" + petId))
+                .GET()
+                .build();
+
+        try {
+            HttpResponse<String> response = client.send(getPetRequest, HttpResponse.BodyHandlers.ofString());
+            System.out.println("GET /pet/" + petId);
+            System.out.println("Status code: " + response.statusCode());
+            System.out.println("Body:\n" + response.body());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
