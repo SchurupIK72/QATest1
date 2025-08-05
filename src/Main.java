@@ -27,8 +27,7 @@ public class Main {
             System.out.println("0 - Exit");
             System.out.print("Your choice: ");
 
-            int choice = scanner.nextInt();
-            scanner.nextLine(); // clear buffer
+            int choice = readInt(scanner, "");  // now also uses safe input
 
             switch (choice) {
                 case 1 -> {
@@ -134,12 +133,31 @@ public class Main {
     }
 
     private static long readLong(Scanner scanner, String prompt) {
-        System.out.print(prompt);
-        while (!scanner.hasNextLong()) {
-            System.out.print("Please enter a valid number: ");
-            scanner.next();
+        while (true) {
+            System.out.print(prompt);
+            if (scanner.hasNextLong()) {
+                long value = scanner.nextLong();
+                scanner.nextLine(); // clear leftover newline
+                return value;
+            } else {
+                System.out.println("Please enter a valid number.");
+                scanner.next(); // discard invalid input
+            }
         }
-        return scanner.nextLong();
+    }
+
+    private static int readInt(Scanner scanner, String prompt) {
+        while (true) {
+            System.out.print(prompt);
+            if (scanner.hasNextInt()) {
+                int value = scanner.nextInt();
+                scanner.nextLine(); // clear leftover newline
+                return value;
+            } else {
+                System.out.println("Please enter a valid integer.");
+                scanner.next(); // discard invalid input
+            }
+        }
     }
 
     private static String readString(Scanner scanner, String prompt) {
