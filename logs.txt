@@ -1,0 +1,54 @@
+рту. 05, 2025 6:40:04 PM Main sendRequest
+INFO: Sending request: PUT /pet
+рту. 05, 2025 6:40:05 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 6:40:05 PM Main sendRequest
+INFO: Response body: {"id":1,"name":"","photoUrls":["http://example.com/photo.jpg"],"tags":[],"status":"sold"}
+рту. 05, 2025 6:40:13 PM Main sendRequest
+INFO: Sending request: DELETE /pet/1
+рту. 05, 2025 6:40:13 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 6:40:13 PM Main sendRequest
+INFO: Response body: {"code":200,"type":"unknown","message":"1"}
+рту. 05, 2025 6:40:20 PM Main sendRequest
+INFO: Sending request: DELETE /pet/1
+рту. 05, 2025 6:40:20 PM Main sendRequest
+INFO: Response status: 404
+рту. 05, 2025 6:40:20 PM Main sendRequest
+INFO: Response body: 
+рту. 05, 2025 6:43:27 PM Main sendRequest
+INFO: Sending request: DELETE /pet/2
+рту. 05, 2025 6:43:28 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 6:43:28 PM Main sendRequest
+INFO: Response body: {"code":200,"type":"unknown","message":"2"}
+рту. 05, 2025 6:43:32 PM Main sendRequest
+INFO: Sending request: DELETE /pet/2
+рту. 05, 2025 6:43:32 PM Main sendRequest
+INFO: Response status: 404
+рту. 05, 2025 6:43:32 PM Main sendRequest
+INFO: Response body: 
+рту. 05, 2025 6:43:38 PM Main sendRequest
+INFO: Sending request: DELETE /pet/3
+рту. 05, 2025 6:43:38 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 6:43:38 PM Main sendRequest
+INFO: Response body: {"code":200,"type":"unknown","message":"3"}
+рту. 05, 2025 6:43:42 PM Main sendRequest
+INFO: Sending request: GET /pet/2
+рту. 05, 2025 6:43:43 PM Main sendRequest
+INFO: Response status: 404
+рту. 05, 2025 6:43:43 PM Main sendRequest
+INFO: Response body: {"code":1,"type":"error","message":"Pet not found"}
+рту. 05, 2025 6:43:56 PM Main sendRequest
+INFO: Sending request: POST /pet
+рту. 05, 2025 6:43:56 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 6:43:56 PM Main sendRequest
+INFO: Response body: {"id":2,"name":"","photoUrls":["http://example.com/photo.jpg"],"tags":[],"status":"avaliable"}
+рту. 05, 2025 6:44:33 PM Main sendRequest
+INFO: Sending request: POST /pet
+рту. 05, 2025 6:44:33 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 6:44:33 PM Main sendRequest
+INFO: Response body: {"id":1,"name":"","photoUrls":["http://example.com/photo.jpg"],"tags":[],"status":"123"}
