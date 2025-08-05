@@ -52,3 +52,15 @@ INFO: Sending request: POST /pet
 INFO: Response status: 200
 рту. 05, 2025 6:44:33 PM Main sendRequest
 INFO: Response body: {"id":1,"name":"","photoUrls":["http://example.com/photo.jpg"],"tags":[],"status":"123"}
+рту. 05, 2025 6:45:20 PM Main sendRequest
+INFO: Sending request: DELETE /pet/3
+рту. 05, 2025 6:45:21 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 6:45:21 PM Main sendRequest
+INFO: Response body: {"code":200,"type":"unknown","message":"3"}
+рту. 05, 2025 6:45:26 PM Main sendRequest
+INFO: Sending request: GET /pet/3
+рту. 05, 2025 6:45:26 PM Main sendRequest
+INFO: Response status: 404
+рту. 05, 2025 6:45:26 PM Main sendRequest
+INFO: Response body: {"code":1,"type":"error","message":"Pet not found"}
