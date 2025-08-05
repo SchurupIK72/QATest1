@@ -166,3 +166,63 @@ INFO: Sending request: POST /pet
 INFO: Response status: 200
 рту. 05, 2025 10:09:42 PM Main sendRequest
 INFO: Response body: {"id":222,"name":"","photoUrls":["http://example.com/photo.jpg"],"tags":[],"status":"1"}
+рту. 05, 2025 10:09:52 PM Main sendRequest
+INFO: Sending request: GET /pet/1
+рту. 05, 2025 10:09:53 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 10:09:53 PM Main sendRequest
+INFO: Response body: {"id":1,"category":{"id":1,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"available"}
+рту. 05, 2025 10:10:16 PM Main sendRequest
+INFO: Sending request: POST /pet
+рту. 05, 2025 10:10:16 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 10:10:16 PM Main sendRequest
+INFO: Response body: {"id":200,"name":"pidor","photoUrls":["http://example.com/photo.jpg"],"tags":[],"status":"sold"}
+рту. 05, 2025 10:10:39 PM Main sendRequest
+INFO: Sending request: DELETE /pet/200
+рту. 05, 2025 10:10:40 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 10:10:40 PM Main sendRequest
+INFO: Response body: {"code":200,"type":"unknown","message":"200"}
+рту. 05, 2025 10:10:46 PM Main sendRequest
+INFO: Sending request: GET /pet/200
+рту. 05, 2025 10:10:46 PM Main sendRequest
+INFO: Response status: 404
+рту. 05, 2025 10:10:46 PM Main sendRequest
+INFO: Response body: {"code":1,"type":"error","message":"Pet not found"}
+рту. 05, 2025 10:11:00 PM Main sendRequest
+INFO: Sending request: POST /pet
+рту. 05, 2025 10:11:00 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 10:11:00 PM Main sendRequest
+INFO: Response body: {"id":200,"name":"123","photoUrls":["http://example.com/photo.jpg"],"tags":[],"status":"sold"}
+рту. 05, 2025 10:11:02 PM Main sendRequest
+INFO: Sending request: GET /pet/200
+рту. 05, 2025 10:11:02 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 10:11:02 PM Main sendRequest
+INFO: Response body: {"id":200,"name":"pidor","photoUrls":["http://example.com/photo.jpg"],"tags":[],"status":"sold"}
+рту. 05, 2025 10:11:16 PM Main sendRequest
+INFO: Sending request: DELETE /pet/200
+рту. 05, 2025 10:11:16 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 10:11:16 PM Main sendRequest
+INFO: Response body: {"code":200,"type":"unknown","message":"200"}
+рту. 05, 2025 10:11:18 PM Main sendRequest
+INFO: Sending request: GET /pet/200
+рту. 05, 2025 10:11:19 PM Main sendRequest
+INFO: Response status: 200
+рту. 05, 2025 10:11:19 PM Main sendRequest
+INFO: Response body: {"id":200,"name":"123","photoUrls":["http://example.com/photo.jpg"],"tags":[],"status":"sold"}
+рту. 05, 2025 10:11:27 PM Main sendRequest
+INFO: Sending request: DELETE /pet/200
+рту. 05, 2025 10:11:27 PM Main sendRequest
+INFO: Response status: 404
+рту. 05, 2025 10:11:27 PM Main sendRequest
+INFO: Response body: 
+рту. 05, 2025 10:11:29 PM Main sendRequest
+INFO: Sending request: GET /pet/200
+рту. 05, 2025 10:11:29 PM Main sendRequest
+INFO: Response status: 404
+рту. 05, 2025 10:11:29 PM Main sendRequest
+INFO: Response body: {"code":1,"type":"error","message":"Pet not found"}
